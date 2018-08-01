@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular-in-memory-web-api',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData angular-in-memory-web-api
+8 silly fetchNamedPackageData angular-in-memory-web-api
+9 silly mapToRegistry name angular-in-memory-web-api
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/angular-in-memory-web-api
+13 verbose request uri https://registry.npmjs.org/angular-in-memory-web-api
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 5:00:01 PM
+16 verbose request id 01aa4f7d4eaa151b
+17 http request GET https://registry.npmjs.org/angular-in-memory-web-api
+18 info retry will retry, error on last attempt: Error: Hostname/IP doesn't match certificate's altnames: "Host: registry.npmjs.org. is not in the cert's altnames: DNS:internet.mts.ru"
+19 info attempt registry request try #2 at 5:00:11 PM
+20 http request GET https://registry.npmjs.org/angular-in-memory-web-api
+21 info retry will retry, error on last attempt: Error: Hostname/IP doesn't match certificate's altnames: "Host: registry.npmjs.org. is not in the cert's altnames: DNS:internet.mts.ru"
+22 info attempt registry request try #3 at 5:01:11 PM
+23 http request GET https://registry.npmjs.org/angular-in-memory-web-api
+24 silly fetchPackageMetaData Error: Hostname/IP doesn't match certificate's altnames: "Host: registry.npmjs.org. is not in the cert's altnames: DNS:internet.mts.ru"
+24 silly fetchPackageMetaData     at Object.checkServerIdentity (tls.js:223:17)
+24 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1111:29)
+24 silly fetchPackageMetaData     at emitNone (events.js:106:13)
+24 silly fetchPackageMetaData     at TLSSocket.emit (events.js:208:7)
+24 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:639:8)
+24 silly fetchPackageMetaData     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+24 silly fetchPackageMetaData  error for angular-in-memory-web-api { Error: Hostname/IP doesn't match certificate's altnames: "Host: registry.npmjs.org. is not in the cert's altnames: DNS:internet.mts.ru"
+24 silly fetchPackageMetaData     at Object.checkServerIdentity (tls.js:223:17)
+24 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1111:29)
+24 silly fetchPackageMetaData     at emitNone (events.js:106:13)
+24 silly fetchPackageMetaData     at TLSSocket.emit (events.js:208:7)
+24 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:639:8)
+24 silly fetchPackageMetaData     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+24 silly fetchPackageMetaData   reason: 'Host: registry.npmjs.org. is not in the cert\'s altnames: DNS:internet.mts.ru',
+24 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+24 silly fetchPackageMetaData   cert:
+24 silly fetchPackageMetaData    { subject:
+24 silly fetchPackageMetaData       { C: 'RU',
+24 silly fetchPackageMetaData         ST: 'Moscow',
+24 silly fetchPackageMetaData         L: 'Moscow',
+24 silly fetchPackageMetaData         O: 'Mobile TeleSystems Public Joint Stock Company',
+24 silly fetchPackageMetaData         OU: 'MTS PJSC',
+24 silly fetchPackageMetaData         CN: 'internet.mts.ru' },
+24 silly fetchPackageMetaData      issuer: { C: 'US', O: 'thawte, Inc.', CN: 'thawte SHA256 SSL CA' },
+24 silly fetchPackageMetaData      subjectaltname: 'DNS:internet.mts.ru',
+24 silly fetchPackageMetaData      infoAccess: { 'OCSP - URI': [Array], 'CA Issuers - URI': [Array] },
+24 silly fetchPackageMetaData      modulus: 'B3236D2B1EB354819C21426055107D46624F888E76731259EAE174348E8B24BF4D0FA3EE1BF806771DD3C7CE24FBEDF42E8D070E147C1D093C3DE3FD78E2AB4F4BFAC43F578B6DA8523118F8CE44860753B11445818B8F852748D7CD9F2536A72FB3484B8B611639AF0FF206DDB1FB82BD48573DC1426F5E52A9941031234E72BDB1EB3654C859EE4F64B97D08FBF1D505B32C0FD7C1F8E530A5AFE9EFF6E84A21222CA0A886EF9DCE92F604DE178B34BE7F8212317FAF29BC59C7706B8249FCC25B915CAC4DCA3726A3AA93841627E29F4DCD36BB40C9E930D787F51D243A3D1A63F8AB08064ABF4987D958B4ED778775BAF7FD5070062BC6544CD70846D2F3',
+24 silly fetchPackageMetaData      exponent: '0x10001',
+24 silly fetchPackageMetaData      valid_from: 'Dec 15 00:00:00 2016 GMT',
+24 silly fetchPackageMetaData      valid_to: 'Dec 15 23:59:59 2019 GMT',
+24 silly fetchPackageMetaData      fingerprint: 'AD:52:78:F5:11:D3:A7:EF:F1:60:60:FA:21:C6:1B:5F:8E:73:AA:D0',
+24 silly fetchPackageMetaData      ext_key_usage: [ '1.3.6.1.5.5.7.3.1', '1.3.6.1.5.5.7.3.2' ],
+24 silly fetchPackageMetaData      serialNumber: '34D3128E205A40790536EEE7382C2582',
+24 silly fetchPackageMetaData      raw: <Buffer 30 82 06 cc 30 82 05 b4 a0 03 02 01 02 02 10 34 d3 12 8e 20 5a 40 79 05 36 ee e7 38 2c 25 82 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 43 31 0b ... > } }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: Hostname/IP doesn't match certificate's altnames: "Host: registry.npmjs.org. is not in the cert's altnames: DNS:internet.mts.ru"
+30 verbose stack     at Object.checkServerIdentity (tls.js:223:17)
+30 verbose stack     at TLSSocket.<anonymous> (_tls_wrap.js:1111:29)
+30 verbose stack     at emitNone (events.js:106:13)
+30 verbose stack     at TLSSocket.emit (events.js:208:7)
+30 verbose stack     at TLSSocket._finishInit (_tls_wrap.js:639:8)
+30 verbose stack     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38)
+31 verbose cwd /home/maria/angular-tour-of-heroes
+32 error Linux 4.15.0-29-generic
+33 error argv "/usr/bin/node" "/usr/bin/npm" "install" "angular-in-memory-web-api" "--save"
+34 error node v8.10.0
+35 error npm  v3.5.2
+36 error Hostname/IP doesn't match certificate's altnames: "Host: registry.npmjs.org. is not in the cert's altnames: DNS:internet.mts.ru"
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]
